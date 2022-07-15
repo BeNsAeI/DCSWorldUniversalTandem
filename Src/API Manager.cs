@@ -6,6 +6,10 @@ namespace DCSWorldUniversalTandem
 
     public class ApiManager
     {
+        public void Run()
+        {
+            Console.WriteLine("Hello World!");
+        }
 
         public void innitiate()
         {
