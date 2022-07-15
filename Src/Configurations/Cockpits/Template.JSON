@@ -1,0 +1,119 @@
+{
+	"name": "aircraft name",
+	"crew": [
+		"Maverick",
+		"Goose"
+	],
+	"roles": [
+		"pilot",
+		"co-pilot",
+		"leftDoorGunner",
+		"rightDoorGunner",
+		"tailGunner",
+		"Passenger"
+	],
+	"cockpits": [
+		{
+			"seatName": "pilot",
+			"switches": [
+				{
+					"name": "Master Arm",
+					"interFaceId": "123456",
+					"type": "Digital",
+					"states": [
+						"Safe",
+						"Sim",
+						"Armed"
+					],
+					"currentState": "armed"
+				},
+				{
+					"name": "Stick",
+					"interFaceId": "223456",
+					"type": "Analog",
+					"currentState": "x+12.20,y-3.10,z+0.00"
+				},
+				{
+					"name": "Landing Gear",
+					"interFaceId": "323456",
+					"type": "Digital",
+					"states": [
+						"Up",
+						"Down"
+					],
+					"currentState": "Down"
+				}
+			]
+		}
+	],
+	"seatAssignment": [
+		{
+			"seatName": "pilot",
+			"seatId": "1",
+			"userName": "Maverick"
+		},
+		{
+			"seatName": "co-pilot",
+			"seatId": "2",
+			"userName": "Goose"
+		},
+		{
+			"seatName": "leftDoorGunner",
+			"seatId": "3"
+		},
+		{
+			"seatName": "rightDoorGunner",
+			"seatId": "4"
+		},
+		{
+			"seatName": "tailGunner",
+			"seatId": "5"
+		},
+		{
+			"seatName": "Passenger",
+			"seatId": "7"
+		},
+		{
+			"seatName": "Passenger",
+			"seatId": "8"
+		},
+		{
+			"seatName": "Passenger",
+			"seatId": "9"
+		}
+	],
+	"actionBuffer": [
+		{
+			"role": "pilot",
+			"type": "interacted",
+			"interFaceId": "323456",
+			"fromState": "Up",
+			"toState": "Down",
+			"status": "performed"
+		},
+		{
+			"role": "co-pilot",
+			"type": "recevied",
+			"interFaceId": "323456",
+			"fromState": "Up",
+			"toState": "Down",
+			"status": "repeated"
+		},
+		{
+			"role": "leftDoorGunner",
+			"type": "recevied",
+			"interFaceId": "323456",
+			"fromState": "Up",
+			"toState": "Down",
+			"status": "pending"
+		},
+		{
+			"role": "Passenger",
+			"type": "recevied",
+			"interFaceId": "323456",
+			"fromState": "Up",
+			"toState": "Down",
+			"status": "NA"
+		}
+	]
+}
