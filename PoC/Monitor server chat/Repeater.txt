@@ -1,0 +1,3 @@
+local Data
+net.recv_chat(Data)
+net.send_chat(Data)
